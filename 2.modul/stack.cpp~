@@ -1,0 +1,26 @@
+#include "stack.hpp"
+
+using namespace std;
+
+namespace Stack{
+  const int max = 10;
+  char tab[max];
+  int nb = 0;
+   
+    }
+
+
+
+void Stack::push(char){
+  tab[nb] = char;
+  nb++;
+  
+}
+
+char Stack::pop(){
+
+
+
+
+}
+
