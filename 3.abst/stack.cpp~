@@ -1,0 +1,39 @@
+#include "stack.hpp"
+
+using namespace std;
+
+namespace Stack{
+  const int nb = 16;
+  const int size = 100;
+  struct Rep{
+    char tab[size];
+    m = -1;
+  };
+  Rep stacks[nb];
+  
+}
+
+
+stack Stack::create(){
+  for(int i=0; i < max; i++){
+    if (tab[i] == 0
+  
+
+}
+
+void Stack::destroy(stack s){
+
+
+}
+
+void Stack::push(stack s, char c){
+}
+
+
+char Stack::pop(stack s){
+
+
+}
+
+
+  
