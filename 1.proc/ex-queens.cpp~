@@ -1,0 +1,68 @@
+#include <iostream>
+
+using namespace std;
+
+/********************************************************************************************
+                                                                         
+Ce programme doit déterminer une solution du placement de n reines (queens Q) sur un échiquier
+de taille n x n (échiquier normal cas n=8)
+
+Aucune des reines ne doit en menacer une autre selon les règles classiques du jeu d'échec
+
+Clairement, si c'est possible il doit y avoir exactement une reine par colonne
+
+Les solutions sont codées au format x1 x2 x3 ... xn
+où xi est la hauteur de la Reine de la ième colonne
+
+La class Queen{} modelise l'echiquier
+
+Exemples d'éxécution:
+1)
+n=4
+
+
+| | |Q| |
+|Q| | | |
+| | | |Q|
+| |Q| | |
+
+2)
+n=8
+
+
+|Q| | | | | | | |
+| | | | | | |Q| |
+| | | | |Q| | | |
+| | | | | | | |Q|
+| |Q| | | | | | |
+| | | |Q| | | | |
+| | | | | |Q| | |
+| | |Q| | | | | |
+
+
+
+
+*******************************************************************************************/
+
+
+class Queens{
+public:
+	Queens(int);
+	void essayer(int);
+	
+private:
+	int n;
+	int* solution;
+	bool* ligne,*diag,*diago;
+	
+	void affich();
+};
+
+main(){
+	int n;
+	cout << "n=";
+	cin>>n;
+	cout<<endl;
+	Queens Q(n);
+	Q.essayer(0);
+}
